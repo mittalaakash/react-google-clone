@@ -15,7 +15,6 @@ function SearchBox({ hideButtons = false }) {
 
   const search = e => {
     e.preventDefault();
-    console.log('seerached', input);
 
     dispatch({
       type: actionTypes.SET_SEARCH_TERM,
@@ -30,6 +29,7 @@ function SearchBox({ hideButtons = false }) {
       <div className='search__input'>
         <SearchIcon className='search__inputIcon' />
         <input value={input} onChange={e => setInput(e.target.value)} />
+
         <MicIcon />
       </div>
       {!hideButtons ? (
