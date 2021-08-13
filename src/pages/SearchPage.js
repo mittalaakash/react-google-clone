@@ -16,10 +16,10 @@ function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
 
   //Live API
-  // const { data } = useGoogleSearch(term);
+  const { data } = useGoogleSearch(term);
 
   //Mock Api CALL
-  const data = Response;
+  // const data = Response;
 
   // console.log(data);
   return (
