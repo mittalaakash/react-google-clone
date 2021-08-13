@@ -28,7 +28,7 @@ function Home() {
           alt='Google logo'
         />
         <div className='home__inputContainer'>
-          <SearchBox hideButtons />
+          <SearchBox />
         </div>
       </div>
     </div>
